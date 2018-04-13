@@ -11,7 +11,3 @@ fi
 # User specific aliases and functions
 set -o vi
 
-# Adjusting xinput here since i don't seem to have a better place to update
-# xinput --set-prop "SynPS/2 Synaptics TouchPad" "Device Enabled" 0
-# xinput --set-prop "TPPS/2 IBM TrackPoint" "libinput Accel Speed" -0.75
-
