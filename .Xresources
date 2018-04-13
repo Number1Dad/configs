@@ -1,0 +1,56 @@
+
+!! My own customisations
+
+*customization: -color
+XTerm*termName:  xterm-256color
+
+xterm*loginshell: true
+
+xterm*vt100*geometry: 240x70
+
+!! xterm*foreground: rgb:a8/a8/a8
+!! xterm*background: rgb:00/10/15
+
+xterm*faceName: Fira Code Retina
+xterm*faceSize: 9
+
+xterm*activeIcon: true
+
+xterm*vt100*internalBorder: 32
+
+xterm*vt100.translations: #override \n\
+        Ctrl ~Shift <Key>Tab: string(0x1b) string("[27;5;9~") \n \
+        Ctrl Shift <Key>Tab: string(0x1b) string("[27;6;9~") \n
+
+xterm*metaSendsEscape: true
+
+!! rofi customisations
+rofi.key-run: SuperL+space
+rofi.disable-history: false
+rofi.fuzzy: true
+
+rofi.font: Fira Code Retina 12
+rofi.line-margin: 5
+rofi.separator-style: solid
+rofi.hide-scrollbar: true
+
+rofi.color-enabled: true
+!                   bg          fg          bg-alt      hl-bg       hl-fg
+rofi.color-normal:  #202020,    #859ba3,    #202020,    #268bd2,    #202020
+!                   bg          border      separator
+rofi.color-window:  #202020,    #404040,    #404040
+rofi.opacity: 90
+
+rofi.lines: 10
+rofi.fixed-num-lines: true
+rofi.width: 20
+rofi.location: 0
+rofi.padding: 10
+rofi.fullscreen: false
+rofi.sidebar-mode: false
+rofi.monitor: 0
+
+
+!! Display dpi
+!! Xft.dpi: 132
+!! Xcursor.size: 32
