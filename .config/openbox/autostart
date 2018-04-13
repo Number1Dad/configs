@@ -5,7 +5,6 @@
 feh --bg-scale /home/keith/Dropbox/Wallpaper/THESUIT_wallpaper.png &
 
 #panel
-#tint2 &
 polybar main &
 polybar tray &
 
