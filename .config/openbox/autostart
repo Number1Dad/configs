@@ -1,0 +1,37 @@
+#autostart apps
+
+#set background
+#feh --bg-scale /usr/share/backgrounds/f26/default/normalish/f26.png &
+feh --bg-scale /home/keith/Dropbox/Wallpaper/THESUIT_wallpaper.png &
+
+#panel
+#tint2 &
+polybar main &
+polybar tray &
+
+# Start xscreensaver
+xscreensaver -no-splash &
+
+## Volume keys daemon
+xfce4-volumed &
+
+## Enable power management
+xfce4-power-manager &
+
+## Start Thunar Daemon
+thunar --daemon &
+
+#launcher
+#synapse &
+
+eval $(gnome-keyring-daemon -s --components=pkcs11,secrets,ssh,gpg) &
+
+
+xset +fp /home/keith/.fonts &
+xset fp rehash &
+
+
+#Adjust trackpoint
+xinput --set-prop "SynPS/2 Synaptics TouchPad" "Device Enabled" 0 &
+xinput --set-prop "TPPS/2 IBM TrackPoint" "libinput Accel Speed" -0.75 &
+
